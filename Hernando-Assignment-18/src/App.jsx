@@ -4,18 +4,39 @@ import './App.css'
 import React, { useState } from 'react';
 
 function App() {
-  const [showName, setShowName] = useState(false);
+    const [isShown, setIsShown] = useState(false);
 
-  const toggleName = () => {
-    setShowName(!showName);
-  };
+    const handleClick = () => {
+        setIsShown(!isShown);
+    };
 
-  return (
-    <div>
-      <button onClick={toggleName}>Show/Hide Name</button>
-      {showName && <p>Your Name</p>}
-    </div>
-  );
+    return (
+        <div>
+            <button 
+                style={{
+                    backgroundColor: '#4CAF50', /* Green */
+                    border: 'none',
+                    color: 'white',
+                    padding: '15px 32px',
+                    textAlign: 'center',
+                    textDecoration: 'none',
+                    display: 'inline-block',
+                    fontSize: '16px',
+                    margin: '4px 2px',
+                    cursor: 'pointer'
+                }}
+                onClick={handleClick}>
+                Tampilkan
+            </button>
+            {isShown && (
+                <p style={{
+                    color: 'blue',
+                    fontSize: '18px',
+                    fontWeight: 'bold'
+                }}>Your Name</p>
+            )}
+        </div>
+    );
 }
 
-export default ToggleName;
+export default App;
