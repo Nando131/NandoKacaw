@@ -1,7 +1,13 @@
+.container {
+  text-align: center;
+  margin-top: 50px;
+}
+
 .toggle-button {
+  padding: 10px 20px;
   background-color: #4CAF50;
   border: none;
-  padding: 15px 32px;
+  color: white;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -10,8 +16,16 @@
   cursor: pointer;
 }
 
+.name-container {
+  display: none;
+}
+
+.name-container.show {
+  display: block;
+  margin-top: 20px;
+}
+
 .name {
-  color: blue;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: bold;
 }

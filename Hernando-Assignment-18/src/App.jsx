@@ -12,8 +12,7 @@ function App() {
 
     return (
         <div className='toggle-button'>
-            <button onClick={handleClick}>Tampilkan</button>
-            {isShown && <p>Your Name</p>}
+            <button className='name' onClick={handleClick}>Tampilkan</button> {isShown && <p>Your Name </p>}
         </div>
     );
 }
