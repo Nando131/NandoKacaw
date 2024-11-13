@@ -11,8 +11,11 @@ function App() {
     };
 
     return (
-        <div className='toggle-button'>
+
+        <div className='container'>
+        <div className='taoggle-button'>
             <button className='name' onClick={handleClick}>Tampilkan</button> {isShown && <p>Your Name </p>}
+        </div>
         </div>
     );
 }
