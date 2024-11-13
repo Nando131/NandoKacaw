@@ -5,7 +5,7 @@
   color: white;
   text-align: center;
   text-decoration: none;
-  display: flex;
+  display: inline-block;
   font-size: 16px;
   justify-content: center;
   margin: 4px 2px;
