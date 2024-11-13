@@ -1,4 +1,6 @@
 .toggle-button {
+    margin: 0 auto;
+    padding: 10px 20px;
     background-color: #4CAF50;
     border: none;
     color: white;
